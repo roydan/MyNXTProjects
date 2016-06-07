@@ -1,0 +1,8 @@
+*.class
+
+# NXT
+*.nxd
+*.nxj
+
+# Package Files #
+*.jar
