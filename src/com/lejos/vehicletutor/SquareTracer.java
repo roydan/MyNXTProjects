@@ -30,9 +30,9 @@ public class SquareTracer {
 
 	public static void main(String[] args) {
 		LCD.drawString("SquareTracer", 0, 0);
-		SquareTracer traveler = new SquareTracer();
-	    traveler.pilot = new DifferentialPilot(wheelDiameter, trackWidth, Motor.B, Motor.C);
+		SquareTracer myPilot = new SquareTracer();
+		myPilot.pilot = new DifferentialPilot(wheelDiameter, trackWidth, Motor.B, Motor.C);
 	    Button.waitForAnyPress();
-	    traveler.drawSquare();
+	    myPilot.drawSquare();
 	}
 }

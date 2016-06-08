@@ -43,9 +43,9 @@ public class TravelTest {
 
 	public static void main(String[] args) {
 		LCD.drawString("TravelTest", 0, 0);
-		TravelTest traveler = new TravelTest();
-	    traveler.pilot = new DifferentialPilot(wheelDiameter, 12.8, Motor.B, Motor.C);
+		TravelTest myPilot = new TravelTest();
+		myPilot.pilot = new DifferentialPilot(wheelDiameter, 12.8, Motor.B, Motor.C);
 	    Button.waitForAnyPress();
-	    traveler.go();
+	    myPilot.go();
 	}
 }

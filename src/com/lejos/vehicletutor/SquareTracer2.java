@@ -38,15 +38,15 @@ public class SquareTracer2 {
 
 	public static void main(String[] args) {
 		LCD.drawString("Square Tracer 2", 0, 0);
-		SquareTracer2 traveler = new SquareTracer2();
-	    traveler.pilot = new DifferentialPilot(wheelDiameter, trackWidth, Motor.B, Motor.C);
+		SquareTracer2 myPilot = new SquareTracer2();
+		myPilot.pilot = new DifferentialPilot(wheelDiameter, trackWidth, Motor.B, Motor.C);
 	    Button.waitForAnyPress();
 		double distance = 10. * wheelDiameter;
 		for (int j = 1; j <= 2; j++) {
-		    traveler.drawSquare(1, distance);
+			myPilot.drawSquare(1, distance);
 		}
 		for (int j = 1; j <= 2; j++) {
-		    traveler.drawSquare(-1, distance);
+			myPilot.drawSquare(-1, distance);
 		}
 	    Button.waitForAnyPress();
 	}
