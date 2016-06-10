@@ -1,0 +1,47 @@
+/**
+ * http://www.lejos.org/nxt/nxj/tutorial/ListenersAndEvents/Listeners_Events.htm
+ * LEJOS Java for LEGO Mindstorms
+ * Error Handling and Debugging
+ * Exceptions
+ * 
+ * les commandes suivantes ne fonctionnent pas si le code utilise un package
+ * copied code from ExceptionTutor1.java to exceptionTutor2.java
+ * removed from EceptionTutor2 reference to package
+ */
+
+>nxjc ExceptionTutor2.java
+>nxjlink -o ExceptionTutor2.nxj -od ExceptionTutor2.nxd ExceptionTutor2
+>nxjdebugtool -di ExceptionTutor2.nxd -c -m 28 33 11
+
+The class number 28 refers to:
+  java.lang.ArrayIndexOutOfBoundsException (ArrayIndexOutOfBoundsException.java)
+
+The method number 33 refers to:
+  ExceptionTutor2.m1()V (ExceptionTutor2.java)
+
+PC 11 refers to:
+  line 13 in ExceptionTutor2.java
+>
+
+/**
+ * Prise 2
+ */
+
+>nxjc ExceptionTutor2.java
+>nxjlink -gr -o ExceptionTutor2.nxj -od ExceptionTutor2.nxd ExceptionTutor2
+>nxjupload -r ExceptionTutor2.nxj
+Found NXT: NXT 0016530CC948
+leJOS NXJ> Upload successful in 3151 milliseconds
+>nxjconsole -di ExceptionTutor2.nxd
+Debug attached
+Found NXT: NXT 0016530CC948
+Connected to NXT 0016530CC948
+Console open
+Running
+Exception: java.lang.ArrayIndexOutOfBoundsException
+ at: ExceptionTutor2.m1(ExceptionTutor2.java:13)
+ at: ExceptionTutor2.m2(ExceptionTutor2.java:18)
+ at: ExceptionTutor2.main(ExceptionTutor2.java:24)
+Console closed
+>
+

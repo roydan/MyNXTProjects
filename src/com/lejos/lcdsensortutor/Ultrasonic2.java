@@ -12,7 +12,7 @@ import lejos.nxt.UltrasonicSensor;
  * Ultrasonic Sensor
  * 
  * Program: multiple echoes
- * *
+ *
  * program that displays the distances from multiple echoes in a column.
  * The program should make four calls to ping(),
  * and display the four columns of results,
